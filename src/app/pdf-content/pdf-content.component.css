@@ -1,0 +1,91 @@
+.pdf-container {
+  width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pdf-header, .pdf-footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pdf-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pdf-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pdf-section {
+  margin-bottom: 30px;
+}
+
+.pdf-section h2 {
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+.pdf-section p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.pdf-graph {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pdf-graph h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.pdf-graph img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pdf-table {
+  margin-bottom: 30px;
+}
+
+.pdf-table h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.pdf-page-break {
+  page-break-before: always;
+}
+@media print {
+  .pdf-container {
+    page-break-inside: avoid;
+  }
+
+  .pdf-section, .pdf-graph, .pdf-table, .pdf-footer {
+    page-break-inside: avoid;
+    margin-bottom: 10px;
+  }
+}
+
